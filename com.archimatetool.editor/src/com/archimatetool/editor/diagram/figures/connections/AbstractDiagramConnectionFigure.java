@@ -190,6 +190,10 @@ extends RoundedPolylineConnection implements IDiagramConnectionFigure {
             fFontColor = c;
             getConnectionLabel().setForegroundColor(c);
         }
+        // Set background to white but make it visible only when
+        // label is on the middle of the conection
+        getConnectionLabel().setBackgroundColor(ColorConstants.white);
+        getConnectionLabel().setOpaque(fTextPosition == IDiagramModelConnection.CONNECTION_TEXT_POSITION_MIDDLE);
     }
     
     /**
