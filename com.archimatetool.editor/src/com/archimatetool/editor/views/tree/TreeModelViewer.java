@@ -26,6 +26,7 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.swt.widgets.Widget;
 
@@ -67,6 +68,9 @@ public class TreeModelViewer extends TreeViewer {
         @Override
         public void propertyChange(PropertyChangeEvent event) {
             if(IPreferenceConstants.HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE.equals(event.getProperty())) {
+                refresh();
+            }
+            if(IPreferenceConstants.HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE_COLOUR.equals(event.getProperty())) {
                 refresh();
             }
         }
@@ -280,11 +284,13 @@ public class TreeModelViewer extends TreeViewer {
         
         ModelTreeViewerLabelProvider() {
             // Mac font issues
+        	/*
             if(PlatformUtils.isMac()) {
                 fontNormal = FontFactory.getMacAlternateFont(getTree().getFont());
                 fontItalic = FontFactory.getMacAlternateFont(fontItalic);
                 fontBold = FontFactory.getMacAlternateFont(fontBold);
-            }
+                
+            }*/
         }
         
         @Override
@@ -335,7 +341,14 @@ public class TreeModelViewer extends TreeViewer {
 
         @Override
         public Color getForeground(Object element) {
-            return fViewpointFilterProvider.getTextColor(element);
+        	// colour unused item red
+            if(Preferences.STORE.getBoolean(IPreferenceConstants.HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE_COLOUR) && element instanceof IArchimateConcept) {
+                if(!DiagramModelUtils.isArchimateConceptReferencedInDiagrams((IArchimateConcept)element)) {
+                	return Display.getCurrent().getSystemColor(SWT.COLOR_RED);
+                }
+            }
+            return Display.getCurrent().getSystemColor(SWT.COLOR_BLACK); 
+            //return fViewpointFilterProvider.getTextColor(element);
         }
 
         @Override

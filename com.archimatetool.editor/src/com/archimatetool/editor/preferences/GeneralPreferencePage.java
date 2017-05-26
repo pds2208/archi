@@ -64,6 +64,8 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
     private Button fShowStatusLineButton;
     
     private Button fShowUnusedElementsInModelTreeButton;
+    
+    private Button fShowUnusedElementsInModelTreeColourButton;
 
 	public GeneralPreferencePage() {
 		setPreferenceStore(Preferences.STORE);
@@ -165,6 +167,12 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
         gd.horizontalSpan = 2;
         fShowUnusedElementsInModelTreeButton.setLayoutData(gd);
         
+        fShowUnusedElementsInModelTreeColourButton = new Button(modelTreeGroup, SWT.CHECK);
+        fShowUnusedElementsInModelTreeColourButton.setText(Messages.GeneralPreferencePage_12);
+        gd = new GridData(GridData.FILL_HORIZONTAL);
+        gd.horizontalSpan = 2;
+        fShowUnusedElementsInModelTreeColourButton.setLayoutData(gd);
+        
         // Visualiser
         Group visualiserGroup = new Group(client, SWT.NULL);
         visualiserGroup.setText(Messages.GeneralPreferencePage_6);
@@ -198,7 +206,8 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
         fAnimateVisualiserNodesButton.setSelection(getPreferenceStore().getBoolean(ANIMATE_VISUALISER_NODES));
         fShowStatusLineButton.setSelection(getPreferenceStore().getBoolean(SHOW_STATUS_LINE));
         fShowUnusedElementsInModelTreeButton.setSelection(getPreferenceStore().getBoolean(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE));
-
+        fShowUnusedElementsInModelTreeColourButton.setSelection(getPreferenceStore().getBoolean(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE_COLOUR));
+        
         // Themes
         List<ITheme> themes = fThemeEngine.getThemes();
         fThemeComboViewer.setInput(themes.toArray());
@@ -220,6 +229,7 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
         getPreferenceStore().setValue(ANIMATE_VISUALISER_NODES, fAnimateVisualiserNodesButton.getSelection());
         getPreferenceStore().setValue(SHOW_STATUS_LINE, fShowStatusLineButton.getSelection());
         getPreferenceStore().setValue(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE, fShowUnusedElementsInModelTreeButton.getSelection());
+        getPreferenceStore().setValue(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE_COLOUR, fShowUnusedElementsInModelTreeColourButton.getSelection());
         
         ITheme theme = (ITheme)((IStructuredSelection)fThemeComboViewer.getSelection()).getFirstElement();
         if(theme != null) {
@@ -238,6 +248,7 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
         fAnimateVisualiserNodesButton.setSelection(getPreferenceStore().getDefaultBoolean(ANIMATE_VISUALISER_NODES));
         fShowStatusLineButton.setSelection(getPreferenceStore().getDefaultBoolean(SHOW_STATUS_LINE));
         fShowUnusedElementsInModelTreeButton.setSelection(getPreferenceStore().getDefaultBoolean(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE));
+        fShowUnusedElementsInModelTreeColourButton.setSelection(getPreferenceStore().getDefaultBoolean(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE_COLOUR));
         
         setTheme(fDefaultTheme, false);
         
