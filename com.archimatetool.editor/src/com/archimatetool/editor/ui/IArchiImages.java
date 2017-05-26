@@ -154,7 +154,7 @@ public interface IArchiImages {
     String ICON_LINKED = IMGPATH + "linked.png"; //$NON-NLS-1$
     String ICON_LANDSCAPE = IMGPATH + "landscape.png"; //$NON-NLS-1$
     String ICON_LOCK = IMGPATH + "lock.png"; //$NON-NLS-1$
-    String ICON_MAGIC_CONNECTION = IMGPATH + "magic_connection.png"; //$NON-NLS-1$
+    String ICON_MAGIC_CONNECTION = IMGPATH + "magic_connection.gif"; //$NON-NLS-1$
     String ICON_MINUS = IMGPATH + "minus.png"; //$NON-NLS-1$
     String ICON_MODELS = IMGPATH + "models.png"; //$NON-NLS-1$
     String ICON_MUTIPLE = IMGPATH + "mutiple.png"; //$NON-NLS-1$
@@ -195,5 +195,5 @@ public interface IArchiImages {
     String CURSOR_IMG_FORMAT_PAINTER = IMGPATH + "formatpainter-cursor.gif"; //$NON-NLS-1$
     String CURSOR_IMG_FORMAT_PAINTER_GREY = IMGPATH + "formatpainter-grey-cursor.gif"; //$NON-NLS-1$
     
-    String CURSOR_IMG_MAGIC_CONNECTOR = IMGPATH + "magic-connector-cursor.png"; //$NON-NLS-1$
+    String CURSOR_IMG_MAGIC_CONNECTOR = IMGPATH + "magic-connector-cursor.gif"; //$NON-NLS-1$
 }

@@ -63,7 +63,7 @@ import com.archimatetool.model.viewpoints.ViewpointManager;
 public class MagicConnectionCreationTool extends ConnectionCreationTool {
     
     private static Cursor cursor = new Cursor(
-            null,
+    		null,
             IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.CURSOR_IMG_MAGIC_CONNECTOR).getImageData(),
             0,
             0);
