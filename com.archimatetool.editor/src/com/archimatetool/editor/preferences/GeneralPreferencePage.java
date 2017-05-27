@@ -22,6 +22,9 @@ import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.jface.viewers.ViewerComparator;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
@@ -66,6 +69,8 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
     private Button fShowUnusedElementsInModelTreeButton;
     
     private Button fShowUnusedElementsInModelTreeColourButton;
+    
+    private Button fEditFillColorButton;
 
 	public GeneralPreferencePage() {
 		setPreferenceStore(Preferences.STORE);
@@ -172,6 +177,33 @@ implements IWorkbenchPreferencePage, IPreferenceConstants {
         gd = new GridData(GridData.FILL_HORIZONTAL);
         gd.horizontalSpan = 2;
         fShowUnusedElementsInModelTreeColourButton.setLayoutData(gd);
+        
+     // Buttons
+        Composite buttonClient = new Composite(client, SWT.NULL);
+        gd = new GridData(SWT.TOP, SWT.TOP, false, false);
+        buttonClient.setLayoutData(gd);
+        buttonClient.setLayout(new GridLayout());
+        
+        // Edit...
+        fEditFillColorButton = new Button(buttonClient, SWT.PUSH);
+        fEditFillColorButton.setText(Messages.GeneralPreferencePage_12);
+        fEditFillColorButton.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
+        fEditFillColorButton.setEnabled(false);
+        fEditFillColorButton.addSelectionListener(new SelectionAdapter() {
+            @Override
+            public void widgetSelected(SelectionEvent event) {
+            	/*
+                Object[] selected = ((IStructuredSelection)fTreeViewer.getSelection()).toArray();
+                if(isValidTreeSelection(selected)) {
+                    RGB newRGB = openColorDialog(selected[0]);
+                    if(newRGB != null) {
+                        for(Object object : selected) {
+                            setColor(object, newRGB);
+                        }
+                    }
+                }*/
+            }
+        });
         
         // Visualiser
         Group visualiserGroup = new Group(client, SWT.NULL);
