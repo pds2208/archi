@@ -51,6 +51,11 @@ public class TechnologyServiceUIProvider extends AbstractArchimateElementUIProvi
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_TECHNOLOGY_SERVICE2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }

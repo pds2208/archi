@@ -51,6 +51,11 @@ public class DeviceUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DEVICE2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }

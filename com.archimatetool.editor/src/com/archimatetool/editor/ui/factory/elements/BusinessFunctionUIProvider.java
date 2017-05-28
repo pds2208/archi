@@ -51,6 +51,11 @@ public class BusinessFunctionUIProvider extends AbstractArchimateElementUIProvid
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_BUSINESS_FUNCTION2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(255, 255, 181);
     }

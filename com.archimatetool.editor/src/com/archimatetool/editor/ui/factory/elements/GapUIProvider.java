@@ -49,6 +49,11 @@ public class GapUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_GAP);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_GAP2);
+    }
 
     @Override
     public Color getDefaultColor() {

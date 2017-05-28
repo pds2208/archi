@@ -51,6 +51,11 @@ public class DataObjectUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DATA_OBJECT2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(181, 255, 255);
     }

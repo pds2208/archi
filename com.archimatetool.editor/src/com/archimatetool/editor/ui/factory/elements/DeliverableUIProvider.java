@@ -49,6 +49,11 @@ public class DeliverableUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DELIVERABLE);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DELIVERABLE2);
+    }
 
     @Override
     public Color getDefaultColor() {

@@ -54,4 +54,9 @@ public class ApplicationFunctionUIProvider extends AbstractArchimateElementUIPro
     public Color getDefaultColor() {
         return ColorFactory.get(181, 255, 255);
     }
+
+	@Override
+	public ImageDescriptor getImageDescriptor2x() {
+		return getImageDescriptorWithUserFillColor(IArchiImages.ICON_APPLICATION_FUNCTION2);
+	}
 }

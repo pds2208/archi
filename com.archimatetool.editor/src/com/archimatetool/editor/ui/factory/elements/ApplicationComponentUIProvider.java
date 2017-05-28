@@ -59,4 +59,9 @@ public class ApplicationComponentUIProvider extends AbstractArchimateElementUIPr
     public boolean hasAlternateFigure() {
         return true;
     }
+
+	@Override
+	public ImageDescriptor getImageDescriptor2x() {
+		return getImageDescriptorWithUserFillColor(IArchiImages.ICON_APPLICATION_COMPONENT2);
+	}
 }

@@ -53,6 +53,8 @@ public interface IObjectUIProvider {
      */
     ImageDescriptor getImageDescriptor();
     
+    ImageDescriptor getImageDescriptor2x();
+    
     /**
      * @param feature The feature in question
      * @return True if this object should expose a feature in the UI

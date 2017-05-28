@@ -51,6 +51,11 @@ public class CourseOfActionUIProvider extends AbstractArchimateElementUIProvider
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_COURSE_OF_ACTION2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(245, 222, 170);
     }

@@ -49,6 +49,12 @@ public class OutcomeUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_OUTCOME);
     }
+    
+
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_OUTCOME2);
+    }
 
     @Override
     public Color getDefaultColor() {

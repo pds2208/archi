@@ -109,6 +109,69 @@ public interface IArchiImages {
     String ICON_VALUE = ARCHIMATE_IMGPATH + "value.png"; //$NON-NLS-1$
     String ICON_WORKPACKAGE = ARCHIMATE_IMGPATH + "workpackage.png"; //$NON-NLS-1$
     
+ // Elements 2x
+    String ICON_APPLICATION_COLLABORATION2 = ARCHIMATE_IMGPATH + "application-collaboration@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_COMPONENT2 = ARCHIMATE_IMGPATH + "application-component@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_EVENT2 = ARCHIMATE_IMGPATH + "application-event@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_FUNCTION2 = ARCHIMATE_IMGPATH + "application-function@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_INTERACTION2 = ARCHIMATE_IMGPATH + "application-interaction@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_INTERFACE2 = ARCHIMATE_IMGPATH + "application-interface@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_PROCESS2 = ARCHIMATE_IMGPATH + "application-process@2x.png"; //$NON-NLS-1$
+    String ICON_APPLICATION_SERVICE2 = ARCHIMATE_IMGPATH + "application-service@2x.png"; //$NON-NLS-1$
+    String ICON_ARTIFACT2 = ARCHIMATE_IMGPATH + "artifact@2x.png"; //$NON-NLS-1$
+    String ICON_ASSESSMENT2 = ARCHIMATE_IMGPATH + "assessment@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_ACTOR2 = ARCHIMATE_IMGPATH + "business-actor@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_COLLABORATION2 = ARCHIMATE_IMGPATH + "business-collaboration@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_EVENT2 = ARCHIMATE_IMGPATH + "business-event@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_FUNCTION2 = ARCHIMATE_IMGPATH + "business-function@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_INTERACTION2 = ARCHIMATE_IMGPATH + "business-interaction@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_INTERFACE2 = ARCHIMATE_IMGPATH + "business-interface@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_OBJECT2 = ARCHIMATE_IMGPATH + "business-object@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_PROCESS2 = ARCHIMATE_IMGPATH + "business-process@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_ROLE2 = ARCHIMATE_IMGPATH + "business-role@2x.png"; //$NON-NLS-1$
+    String ICON_BUSINESS_SERVICE2 = ARCHIMATE_IMGPATH + "business-service@2x.png"; //$NON-NLS-1$
+    String ICON_COMMUNICATION_NETWORK2 = ARCHIMATE_IMGPATH + "communication-network@2x.png"; //$NON-NLS-1$
+    String ICON_CAPABILITY2 = ARCHIMATE_IMGPATH + "capability@2x.png"; //$NON-NLS-1$
+    String ICON_CONSTRAINT2 = ARCHIMATE_IMGPATH + "constraint@2x.png"; //$NON-NLS-1$
+    String ICON_CONTRACT2 = ARCHIMATE_IMGPATH + "contract@2x.png"; //$NON-NLS-1$
+    String ICON_COURSE_OF_ACTION2 = ARCHIMATE_IMGPATH + "course-of-action@2x.png"; //$NON-NLS-1$
+    String ICON_DATA_OBJECT2 = ARCHIMATE_IMGPATH + "data-object@2x.png"; //$NON-NLS-1$
+    String ICON_DELIVERABLE2 = ARCHIMATE_IMGPATH + "deliverable@2x.png"; //$NON-NLS-1$
+    String ICON_DEVICE2 = ARCHIMATE_IMGPATH + "device@2x.png"; //$NON-NLS-1$
+    String ICON_DISTRIBUTION_NETWORK2 = ARCHIMATE_IMGPATH + "distribution-network@2x.png"; //$NON-NLS-1$
+    String ICON_DRIVER2 = ARCHIMATE_IMGPATH + "driver@2x.png"; //$NON-NLS-1$
+    String ICON_EQUIPMENT2 = ARCHIMATE_IMGPATH + "equipment@2x.png"; //$NON-NLS-1$
+    String ICON_FACILITY2 = ARCHIMATE_IMGPATH + "facility@2x.png"; //$NON-NLS-1$
+    String ICON_GAP2 = ARCHIMATE_IMGPATH + "gap@2x.png"; //$NON-NLS-1$
+    String ICON_GOAL2 = ARCHIMATE_IMGPATH + "goal@2x.png"; //$NON-NLS-1$
+    String ICON_GROUPING2 = ARCHIMATE_IMGPATH + "grouping@2x.png"; //$NON-NLS-1$
+    String ICON_IMPLEMENTATION_EVENT2 = ARCHIMATE_IMGPATH + "implementation-event@2x.png"; //$NON-NLS-1$
+    String ICON_LOCATION2 = ARCHIMATE_IMGPATH + "location@2x.png"; //$NON-NLS-1$
+    String ICON_MATERIAL2 = ARCHIMATE_IMGPATH + "material@2x.png"; //$NON-NLS-1$
+    String ICON_MEANING2 = ARCHIMATE_IMGPATH + "meaning@2x.png"; //$NON-NLS-1$
+    String ICON_NODE2 = ARCHIMATE_IMGPATH + "node@2x.png"; //$NON-NLS-1$
+    String ICON_OUTCOME2 = ARCHIMATE_IMGPATH + "outcome@2x.png"; //$NON-NLS-1$
+    String ICON_PATH2 = ARCHIMATE_IMGPATH + "path@2x.png"; //$NON-NLS-1$
+    String ICON_PLATEAU2 = ARCHIMATE_IMGPATH + "plateau@2x.png"; //$NON-NLS-1$
+    String ICON_PRINCIPLE2 = ARCHIMATE_IMGPATH + "principle@2x.png"; //$NON-NLS-1$
+    String ICON_PRODUCT2 = ARCHIMATE_IMGPATH + "product@2x.png"; //$NON-NLS-1$
+    String ICON_REPRESENTATION2 = ARCHIMATE_IMGPATH + "representation@2x.png"; //$NON-NLS-1$
+    String ICON_RESOURCE2 = ARCHIMATE_IMGPATH + "resource@2x.png"; //$NON-NLS-1$
+    String ICON_REQUIREMENT2 = ARCHIMATE_IMGPATH + "requirement@2x.png"; //$NON-NLS-1$
+    String ICON_STAKEHOLDER2 = ARCHIMATE_IMGPATH + "stakeholder@2x.png"; //$NON-NLS-1$
+    String ICON_SYSTEM_SOFTWARE2 = ARCHIMATE_IMGPATH + "system-software@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_COLLABORATION2 = ARCHIMATE_IMGPATH + "technology-collaboration@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_EVENT2 = ARCHIMATE_IMGPATH + "technology-event@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_FUNCTION2 = ARCHIMATE_IMGPATH + "technology-function@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_INTERACTION2 = ARCHIMATE_IMGPATH + "technology-interaction@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_INTERFACE2 = ARCHIMATE_IMGPATH + "technology-interface@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_PROCESS2 = ARCHIMATE_IMGPATH + "technology-process@2x.png"; //$NON-NLS-1$
+    String ICON_TECHNOLOGY_SERVICE2 = ARCHIMATE_IMGPATH + "technology-service@2x.png"; //$NON-NLS-1$
+    String ICON_VALUE2 = ARCHIMATE_IMGPATH + "value@2x.png"; //$NON-NLS-1$
+    String ICON_WORKPACKAGE2 = ARCHIMATE_IMGPATH + "workpackage@2x.png"; //$NON-NLS-1$
+    
+    
+    
     // Relations
     String ICON_ACESS_RELATION = ARCHIMATE_IMGPATH + "access.png"; //$NON-NLS-1$
     String ICON_AGGREGATION_RELATION = ARCHIMATE_IMGPATH + "aggregation.png"; //$NON-NLS-1$
@@ -142,7 +205,10 @@ public interface IArchiImages {
     String ICON_CANCEL_SEARCH = IMGPATH + "cancelsearch.png"; //$NON-NLS-1$
     String ICON_COG = IMGPATH + "cog.png"; //$NON-NLS-1$
     String ICON_COLLAPSEALL = IMGPATH + "collapseall.png"; //$NON-NLS-1$
+    
     String ICON_DIAGRAM = IMGPATH + "diagram.png"; //$NON-NLS-1$
+    String ICON_DIAGRAM2x = IMGPATH + "diagram.png"; //$NON-NLS-1$
+    
     String ICON_DEFAULT_SIZE = IMGPATH + "default-size.png"; //$NON-NLS-1$
     String ICON_DERIVED = IMGPATH + "derived.png"; //$NON-NLS-1$
     String ICON_DERIVED_SM = IMGPATH + "derived-sm.png"; //$NON-NLS-1$
@@ -150,7 +216,10 @@ public interface IArchiImages {
     String ICON_FILTER = IMGPATH + "filter.gif"; //$NON-NLS-1$
     String ICON_FORMAT_PAINTER = IMGPATH + "formatpainter.png"; //$NON-NLS-1$
     String ICON_FORMAT_PAINTER_GREY = IMGPATH + "formatpainter-grey.png"; //$NON-NLS-1$
+    
     String ICON_GROUP = IMGPATH + "group.png"; //$NON-NLS-1$
+    String ICON_GROUP2 = IMGPATH + "group@2x.png"; //$NON-NLS-1$
+    
     String ICON_LINKED = IMGPATH + "linked.png"; //$NON-NLS-1$
     String ICON_LANDSCAPE = IMGPATH + "landscape.png"; //$NON-NLS-1$
     String ICON_LOCK = IMGPATH + "lock.png"; //$NON-NLS-1$
@@ -163,7 +232,10 @@ public interface IArchiImages {
     String ICON_NAVIGATOR_UPWARD = IMGPATH + "nav-upward.png"; //$NON-NLS-1$
     String ICON_NEW_FILE = IMGPATH + "newfile.png"; //$NON-NLS-1$
     String ICON_NEW_OVERLAY = IMGPATH + "new_overlay.gif"; //$NON-NLS-1$
+    
     String ICON_NOTE = IMGPATH + "note.png"; //$NON-NLS-1$
+    String ICON_NOTE2 = IMGPATH + "note@2x.png"; //$NON-NLS-1$
+    
     String ICON_OPEN = IMGPATH + "open.png"; //$NON-NLS-1$
     String ICON_PIN = IMGPATH + "pin.png"; //$NON-NLS-1$
     String ICON_PLUS = IMGPATH + "plus.png"; //$NON-NLS-1$

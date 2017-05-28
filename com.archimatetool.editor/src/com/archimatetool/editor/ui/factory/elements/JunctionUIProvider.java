@@ -54,6 +54,11 @@ public class JunctionUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_AND_JUNCTION);
+    }
+    
+    @Override
     public Dimension getDefaultSize() {
         return new Dimension(15, 15);
     }

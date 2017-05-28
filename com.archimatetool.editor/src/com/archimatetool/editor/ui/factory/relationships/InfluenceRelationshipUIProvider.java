@@ -47,4 +47,9 @@ public class InfluenceRelationshipUIProvider extends AbstractArchimateRelationsh
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_INFLUENCE_RELATION);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_INFLUENCE_RELATION);
+    }
 }

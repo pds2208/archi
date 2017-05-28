@@ -59,4 +59,9 @@ public class ApplicationEventUIProvider extends AbstractArchimateElementUIProvid
     public boolean hasAlternateFigure() {
         return true;
     }
+
+	@Override
+	public ImageDescriptor getImageDescriptor2x() {
+		return getImageDescriptorWithUserFillColor(IArchiImages.ICON_APPLICATION_EVENT2);
+	}
 }

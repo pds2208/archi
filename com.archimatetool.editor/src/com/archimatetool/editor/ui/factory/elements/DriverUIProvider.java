@@ -49,6 +49,11 @@ public class DriverUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DRIVER);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DRIVER2);
+    }
 
     @Override
     public Color getDefaultColor() {

@@ -113,7 +113,7 @@ public class ArchimateDiagramEditorPalette extends AbstractPaletteRoot {
                 Messages.ArchimateDiagramEditorPalette_3,
                 new ArchimateDiagramModelFactory(IArchimatePackage.eINSTANCE.getDiagramModelNote()),
                 IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_NOTE),
-                IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_NOTE));
+                IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_NOTE2));
         group.add(noteEntry);
         
         // Group
@@ -122,7 +122,7 @@ public class ArchimateDiagramEditorPalette extends AbstractPaletteRoot {
                 Messages.ArchimateDiagramEditorPalette_5,
                 new ArchimateDiagramModelFactory(IArchimatePackage.eINSTANCE.getDiagramModelGroup()),
                 IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_GROUP),
-                IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_GROUP));
+                IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_GROUP2));
         group.add(groupEntry);
         
         // Note Connection
@@ -227,7 +227,7 @@ public class ArchimateDiagramEditorPalette extends AbstractPaletteRoot {
                 description,
                 new ArchimateDiagramModelFactory(eClass),
                 ArchiLabelProvider.INSTANCE.getImageDescriptor(eClass),
-                ArchiLabelProvider.INSTANCE.getImageDescriptor(eClass));
+                ArchiLabelProvider.INSTANCE.getImageDescriptor2x(eClass));
         
         return entry;
     }
@@ -238,7 +238,7 @@ public class ArchimateDiagramEditorPalette extends AbstractPaletteRoot {
                 description,
                 new ArchimateDiagramModelFactory(eClass),
                 ArchiLabelProvider.INSTANCE.getImageDescriptor(eClass),
-                ArchiLabelProvider.INSTANCE.getImageDescriptor(eClass));
+                ArchiLabelProvider.INSTANCE.getImageDescriptor2x(eClass));
         
         // Ensure Tool gets deselected
         entry.setToolProperty(AbstractTool.PROPERTY_UNLOAD_WHEN_FINISHED, true);

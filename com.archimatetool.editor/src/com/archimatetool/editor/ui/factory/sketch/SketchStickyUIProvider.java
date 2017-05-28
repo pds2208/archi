@@ -53,4 +53,9 @@ public class SketchStickyUIProvider extends AbstractGraphicalObjectUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_STICKY);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_STICKY);
+    }
 }

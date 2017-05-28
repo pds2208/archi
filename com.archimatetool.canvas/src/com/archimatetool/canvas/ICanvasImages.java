@@ -23,6 +23,7 @@ public interface ICanvasImages {
     
     String ICON_CANVAS_BLANK = IMGPATH + "canvas-blank.png"; //$NON-NLS-1$
     String ICON_CANVAS_BLOCK = IMGPATH + "block.png"; //$NON-NLS-1$
+    String ICON_CANVAS_BLOCK2x = IMGPATH + "block@2x.png"; //$NON-NLS-1$
     String ICON_CANVAS_MODEL = IMGPATH + "canvas.png"; //$NON-NLS-1$
     String ICON_CANVAS_STICKY = IMGPATH + "sticky.png"; //$NON-NLS-1$
     

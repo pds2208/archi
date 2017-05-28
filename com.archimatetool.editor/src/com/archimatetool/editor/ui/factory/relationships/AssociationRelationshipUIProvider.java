@@ -47,4 +47,9 @@ public class AssociationRelationshipUIProvider extends AbstractArchimateRelation
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ASSOCIATION_RELATION);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ASSOCIATION_RELATION);
+    }
 }

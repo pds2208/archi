@@ -54,6 +54,11 @@ public class SketchModelUIProvider extends AbstractObjectUIProvider implements I
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_SKETCH);
+    }
+    
+    @Override
     public IGraphicsIcon getGraphicsIcon() {
         return graphicsIcon;
     }

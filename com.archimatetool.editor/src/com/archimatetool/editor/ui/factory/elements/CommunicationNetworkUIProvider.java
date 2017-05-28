@@ -51,6 +51,11 @@ public class CommunicationNetworkUIProvider extends AbstractArchimateElementUIPr
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_COMMUNICATION_NETWORK2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }

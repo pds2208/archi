@@ -58,4 +58,9 @@ public class CanvasModelUIProvider extends AbstractObjectUIProvider implements I
     public IGraphicsIcon getGraphicsIcon() {
         return graphicsIcon;
     }
+
+	@Override
+	public ImageDescriptor getImageDescriptor2x() {
+		return ICanvasImages.ImageFactory.getImageDescriptor(ICanvasImages.ICON_CANVAS_MODEL);
+	}
 }

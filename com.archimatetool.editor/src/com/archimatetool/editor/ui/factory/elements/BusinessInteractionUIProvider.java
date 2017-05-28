@@ -51,6 +51,11 @@ public class BusinessInteractionUIProvider extends AbstractArchimateElementUIPro
     }
     
     @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_BUSINESS_INTERACTION2);
+    }
+    
+    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(255, 255, 181);
     }

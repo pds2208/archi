@@ -77,4 +77,9 @@ public class DiagramModelReferenceUIProvider extends AbstractGraphicalObjectUIPr
     public Color getDefaultColor() {
         return ColorFactory.get(220, 235, 235);
     }
+
+	@Override
+	public ImageDescriptor getImageDescriptor2x() {
+		return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_DIAGRAM);
+	}
 }

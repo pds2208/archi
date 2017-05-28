@@ -47,4 +47,9 @@ public class FlowRelationshipUIProvider extends AbstractArchimateRelationshipUIP
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_FLOW_RELATION);
     }
+    
+    @Override
+    public ImageDescriptor getImageDescriptor2x() {
+        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_FLOW_RELATION);
+    }
 }
