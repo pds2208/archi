@@ -673,7 +673,7 @@
             locationURI="toolbar:toolbar_file?after=start">
          <command
                commandId="com.archimatetool.editor.action.newModel"
-               icon="img/newfile.png"
+               icon="img/newfile.gif"
                id="com.archimatetool.menu.newDropdown"
                label="%command.label"
                style="pulldown">
@@ -684,7 +684,7 @@
             locationURI="menu:com.archimatetool.menu.newDropdown">
          <command
                commandId="com.archimatetool.editor.action.newModel"
-               icon="img/newfile.png"
+               icon="img/newfile.gif"
                id="com.archimatetool.menu.newModel"
                label="%command.label.0"
                style="push">
