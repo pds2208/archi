@@ -171,6 +171,7 @@ public class HTMLReportExporter {
         
         ST stModel = groupFile.getInstanceOf("modelreport"); //$NON-NLS-1$
 
+        
         stModel.add("model", fModel); //$NON-NLS-1$
         stModel.add("strategyFolder", fModel.getFolder(FolderType.STRATEGY)); //$NON-NLS-1$
         stModel.add("businessFolder", fModel.getFolder(FolderType.BUSINESS)); //$NON-NLS-1$
@@ -258,15 +259,17 @@ public class HTMLReportExporter {
         }
 
         Hashtable<IDiagramModel, Rectangle> offsetsTable = saveImages(imagesFolder);
-
+        
         for(IDiagramModel dmOrig : fModel.getDiagramModels()) {
             // we need to add the necessary offsets in order to get correct absolute coordinates
             // for the elements in the generated image
             Rectangle offset = offsetsTable.get(dmOrig);
+            
             // we create a copy of the Model: (children will not be copied!)
             IDiagramModel dmCopy = (IDiagramModel) dmOrig.getCopy();
             // FIX THE ID WHICH IS NOT COPIED
             dmCopy.setId(dmOrig.getId());
+            
             // process the children
             for (IDiagramModelObject dmoOrig: dmOrig.getChildren() ) {
                 IDiagramModelObject dmoCopy = getOffsetCopy(dmoOrig, offset.x*-1, offset.y*-1);
@@ -278,6 +281,10 @@ public class HTMLReportExporter {
             OutputStreamWriter viewW = new OutputStreamWriter(new FileOutputStream(viewF), "UTF8"); //$NON-NLS-1$
             stFrame.remove("element"); //$NON-NLS-1$
             stFrame.add("element", dmCopy); //$NON-NLS-1$
+            stFrame.remove("height"); //$NON-NLS-1$
+            stFrame.remove("width"); //$NON-NLS-1$
+            stFrame.add("height", offset.height);
+            stFrame.add("width", offset.width);
             viewW.write(stFrame.render());
             viewW.close();
         }
@@ -296,7 +303,7 @@ public class HTMLReportExporter {
         for(IDiagramModel dm : fModel.getDiagramModels()) {
         	int dpi = Integer.parseInt(System.getProperty("org.eclipse.swt.internal.deviceZoom"));
         	double scale = (double) 100 / dpi;
-            ModelReferencedImage geoImage = DiagramUtils.createModelReferencedImage(dm, scale, 10);
+            ModelReferencedImage geoImage = DiagramUtils.createModelReferencedImage(dm, 1, 10);
             Image image = geoImage.getImage();
             String diagramName = dm.getId();
             if(StringUtils.isSet(diagramName)) {
@@ -319,11 +326,10 @@ public class HTMLReportExporter {
 
             // Get and store the offset of the top-left element in the figure
             offsetsTable.put(dm,  geoImage.getOffset());
-
+            
             try {
                 ImageLoader loader = new ImageLoader();
                 loader.data = new ImageData[] { image.getImageDataAtCurrentZoom() };
-                loader.compression = 0;
                 File file = new File(imagesFolder, diagramName);
                 loader.save(file.getAbsolutePath(), SWT.IMAGE_PNG);
             }
