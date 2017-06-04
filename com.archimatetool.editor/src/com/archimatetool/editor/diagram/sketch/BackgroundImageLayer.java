@@ -33,8 +33,8 @@ public class BackgroundImageLayer extends FreeformLayer {
     public void setImage(Image image) {
         fBackgroundImage = image;
         if(fBackgroundImage != null) {
-            fImageWidth = fBackgroundImage.getBounds().width;
-            fImageHeight = fBackgroundImage.getBounds().height;
+            fImageWidth = fBackgroundImage.getBoundsInPixels().width;
+            fImageHeight = fBackgroundImage.getBoundsInPixels().height;
         }
         repaint();
     }

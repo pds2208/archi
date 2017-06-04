@@ -45,7 +45,7 @@ public class IconicDelegate {
             
             if(image != null) {
                 // If the image bounds is bigger than the maximum displayed image here then create a scaled image
-                if(image.getBounds().width > IIconic.MAX_IMAGE_SIZE || image.getBounds().height > IIconic.MAX_IMAGE_SIZE) {
+                if(image.getBoundsInPixels().width > IIconic.MAX_IMAGE_SIZE || image.getBoundsInPixels().height > IIconic.MAX_IMAGE_SIZE) {
                     fImage = ImageFactory.getScaledImage(image, IIconic.MAX_IMAGE_SIZE);
                     image.dispose();
                 }
@@ -59,8 +59,8 @@ public class IconicDelegate {
     
     public void drawIcon(Graphics graphics, Rectangle bounds) {
         if(fImage != null) {
-            int width = fImage.getBounds().width;
-            int height = fImage.getBounds().height;
+            int width = fImage.getBoundsInPixels().width;
+            int height = fImage.getBoundsInPixels().height;
             
             int x = bounds.x;
             int y = bounds.y;

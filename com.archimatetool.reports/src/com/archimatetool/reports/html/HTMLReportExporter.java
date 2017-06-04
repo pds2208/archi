@@ -301,8 +301,6 @@ public class HTMLReportExporter {
         int i = 1;
         
         for(IDiagramModel dm : fModel.getDiagramModels()) {
-        	int dpi = Integer.parseInt(System.getProperty("org.eclipse.swt.internal.deviceZoom"));
-        	double scale = (double) 100 / dpi;
             ModelReferencedImage geoImage = DiagramUtils.createModelReferencedImage(dm, 1, 10);
             Image image = geoImage.getImage();
             String diagramName = dm.getId();

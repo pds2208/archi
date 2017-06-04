@@ -115,7 +115,7 @@ public class HeapStatusWidget extends Composite {
 		Display display = getDisplay();
 		gcImage = imageDesc.createImage();
 		if (gcImage != null) {
-			imgBounds = gcImage.getBounds();
+			imgBounds = gcImage.getBoundsInPixels();
 			disabledGcImage = new Image(display, gcImage, SWT.IMAGE_DISABLE);
 		}
 		usedMemCol = display.getSystemColor(SWT.COLOR_INFO_BACKGROUND);

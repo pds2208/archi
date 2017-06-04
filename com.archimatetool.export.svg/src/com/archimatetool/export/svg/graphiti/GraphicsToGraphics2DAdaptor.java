@@ -750,7 +750,7 @@ public class GraphicsToGraphics2DAdaptor extends Graphics {
             gc.setFont(getFont());
             gc.drawString(s, 0, 0);
             gc.dispose();
-            ImageData data = image.getImageData();
+            ImageData data = image.getImageDataAtCurrentZoom();
             image.dispose();
             RGB backgroundRGB = getBackgroundColor().getRGB();
             for (int i = 0; i < data.width; i++) {

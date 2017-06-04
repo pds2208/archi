@@ -39,7 +39,7 @@ public interface IArchiImages {
     String ECLIPSE_IMAGE_IMPORT_PREF_WIZARD = IMGPATH + "importpref_wiz.png";  //$NON-NLS-1$
     String ECLIPSE_IMAGE_EXPORT_DIR_WIZARD = IMGPATH + "exportdir_wiz.png"; //$NON-NLS-1$
     String ECLIPSE_IMAGE_FILE = IMGPATH + "file_obj.gif"; //$NON-NLS-1$
-    String ECLIPSE_IMAGE_FOLDER = IMGPATH + "fldr_obj.gif"; //$NON-NLS-1$
+    String ECLIPSE_IMAGE_FOLDER = IMGPATH + "fldr_obj@2x.png"; //$NON-NLS-1$
     
     String MENU_ARROW = IMGPATH + "menu-arrow.png"; //$NON-NLS-1$
     
@@ -230,13 +230,13 @@ public interface IArchiImages {
     String ICON_NAVIGATOR = IMGPATH + "navigator.png"; //$NON-NLS-1$
     String ICON_NAVIGATOR_DOWNWARD = IMGPATH + "nav-downward.png"; //$NON-NLS-1$
     String ICON_NAVIGATOR_UPWARD = IMGPATH + "nav-upward.png"; //$NON-NLS-1$
-    String ICON_NEW_FILE = IMGPATH + "newfile.gif"; //$NON-NLS-1$
+    String ICON_NEW_FILE = IMGPATH + "newfile.png"; //$NON-NLS-1$
     String ICON_NEW_OVERLAY = IMGPATH + "new_overlay.gif"; //$NON-NLS-1$
     
     String ICON_NOTE = IMGPATH + "note.png"; //$NON-NLS-1$
     String ICON_NOTE2 = IMGPATH + "note@2x.png"; //$NON-NLS-1$
     
-    String ICON_OPEN = IMGPATH + "open.gif"; //$NON-NLS-1$
+    String ICON_OPEN = IMGPATH + "open.png"; //$NON-NLS-1$
     String ICON_PIN = IMGPATH + "pin.png"; //$NON-NLS-1$
     String ICON_PLUS = IMGPATH + "plus.png"; //$NON-NLS-1$
     String ICON_PROPERTIES = IMGPATH + "properties.png"; //$NON-NLS-1$

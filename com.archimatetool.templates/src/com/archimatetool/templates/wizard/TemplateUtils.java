@@ -73,7 +73,7 @@ public class TemplateUtils {
         GC gc = new GC(image);
         Color c = new Color(null, 64, 64, 64);
         gc.setForeground(c);
-        gc.drawRectangle(0, 0, image.getBounds().width - 1, image.getBounds().height - 1);
+        gc.drawRectangle(0, 0, image.getBoundsInPixels().width - 1, image.getBoundsInPixels().height - 1);
         gc.dispose();
         c.dispose();
 
