@@ -9,6 +9,11 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Platform;
@@ -59,33 +64,34 @@ public class PluginInstaller {
         File installFolder = getInstallFolder();
 
         if(installFolder != null && installFolder.exists() && installFolder.isDirectory()) {
-            File pluginsFolder = getPluginsFolder();
-            
-            for(File file : installFolder.listFiles()) {
-                // Ignore the magic entry file
-                if(MAGIC_ENTRY.equalsIgnoreCase(file.getName())) {
-                    continue;
-                }
+            try {
+                File pluginsFolder = getPluginsFolder();
                 
-                // Delete old ones in target plugins folder
-                deleteMatchingPlugin(file, pluginsFolder);
-                
-                // Copy new ones
-                if(file.isDirectory()) {
-                    FileUtils.copyFolder(file, new File(pluginsFolder, file.getName()));
-                }
-                else {
-                    FileUtils.copyFile(file, new File(pluginsFolder, file.getName()), false);
+                for(File file : installFolder.listFiles()) {
+                    // Ignore the magic entry file
+                    if(MAGIC_ENTRY.equalsIgnoreCase(file.getName())) {
+                        continue;
+                    }
+                    
+                    // Delete old ones in target plugins folder
+                    deleteMatchingPlugin(file, pluginsFolder);
+                    
+                    // Copy new ones
+                    if(file.isDirectory()) {
+                        FileUtils.copyFolder(file, new File(pluginsFolder, file.getName()));
+                    }
+                    else {
+                        FileUtils.copyFile(file, new File(pluginsFolder, file.getName()), false);
+                    }
                 }
             }
-            
-            // Now delete the install folder
-            FileUtils.deleteFolder(installFolder);
-            
-            // If we got this far and successfully deleted the install folder then return true
-            if(!installFolder.exists()) {
-                return true;
+            // Delete the install folder in all cases
+            finally {
+                FileUtils.deleteFolder(installFolder);
             }
+            
+            // If we got this far then return true
+            return true;
         }
         
         return false;
@@ -93,23 +99,23 @@ public class PluginInstaller {
     
     // Delete matching target plugin
     private static void deleteMatchingPlugin(File newPlugin, File pluginsFolder) throws IOException {
-        String pluginName = getPluginName(newPlugin.getName());
-
-        for(File file : findMatchingPlugins(pluginsFolder, pluginName)) {
+        for(File file : findMatchingPlugins(pluginsFolder, newPlugin)) {
             if(file.isDirectory()) {
-                FileUtils.deleteFolder(file);
+                recursiveDeleteOnExit(file.toPath());
             }
             else {
-                file.delete();
+                file.deleteOnExit();
             }
         }
     }
     
-    private static File[] findMatchingPlugins(File pluginsFolder, final String pluginName) {
+    private static File[] findMatchingPlugins(File pluginsFolder, File newPlugin) {
+        String pluginName = getPluginName(newPlugin.getName());
+        
         return pluginsFolder.listFiles(new FileFilter() {
             public boolean accept(File file) {
                 String targetPluginName = getPluginName(file.getName());
-                return targetPluginName.equals(pluginName);
+                return targetPluginName.equals(pluginName) && !newPlugin.getName().equals(file.getName());
             }
         });
     }
@@ -149,5 +155,22 @@ public class PluginInstaller {
         URL url = Platform.getBundle(ArchiPlugin.PLUGIN_ID).getEntry("/"); //$NON-NLS-1$
         url = FileLocator.resolve(url);
         return new File(url.getPath()).getParentFile();
+    }
+    
+    static void recursiveDeleteOnExit(Path path) throws IOException {
+        Files.walkFileTree(path, new SimpleFileVisitor<Path>() {
+
+            @Override
+            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
+                file.toFile().deleteOnExit();
+                return FileVisitResult.CONTINUE;
+            }
+
+            @Override
+            public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) {
+                dir.toFile().deleteOnExit();
+                return FileVisitResult.CONTINUE;
+            }
+        });
     }
 }
