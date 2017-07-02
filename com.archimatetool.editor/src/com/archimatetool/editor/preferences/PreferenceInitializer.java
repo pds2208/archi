@@ -28,7 +28,7 @@ implements IPreferenceConstants {
 		
 		store.setDefault(MRU_MAX, 6);
         
-		store.setDefault(GRID_SIZE, 12);
+		store.setDefault(GRID_SIZE, 10);
 		store.setDefault(GRID_VISIBLE, false);
 		store.setDefault(GRID_SNAP, true);
 		store.setDefault(GRID_SHOW_GUIDELINES, true);
@@ -77,7 +77,7 @@ implements IPreferenceConstants {
         store.setDefault(DERIVE_ELEMENT_LINE_COLOR_FACTOR, 7);
         
         store.setDefault(USE_ORTHOGONAL_ANCHOR, true);
-        store.setDefault(USE_LINE_CURVES, true);
+        store.setDefault(USE_LINE_CURVES, false);
         store.setDefault(USE_LINE_JUMPS, true);
         
         store.setDefault(ANIMATE_VISUALISER_NODES, true);
@@ -96,6 +96,7 @@ implements IPreferenceConstants {
         store.setDefault(DEFAULT_ARCHIMATE_FIGURE_HEIGHT, 55);
         
         store.setDefault(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE, true);
+        store.setDefault(HIGHLIGHT_UNUSED_ELEMENTS_IN_MODEL_TREE_COLOUR, true);
         
         store.setDefault(DIAGRAM_PASTE_SPECIAL_BEHAVIOR, 0);
     }
