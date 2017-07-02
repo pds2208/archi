@@ -39,7 +39,7 @@ public interface IArchiImages {
     String ECLIPSE_IMAGE_IMPORT_PREF_WIZARD = IMGPATH + "importpref_wiz.png";  //$NON-NLS-1$
     String ECLIPSE_IMAGE_EXPORT_DIR_WIZARD = IMGPATH + "exportdir_wiz.png"; //$NON-NLS-1$
     String ECLIPSE_IMAGE_FILE = IMGPATH + "file_obj.gif"; //$NON-NLS-1$
-    String ECLIPSE_IMAGE_FOLDER = IMGPATH + "fldr_obj@2x.png"; //$NON-NLS-1$
+    String ECLIPSE_IMAGE_FOLDER = IMGPATH + "fldr_obj.png"; //$NON-NLS-1$
     
     String MENU_ARROW = IMGPATH + "menu-arrow.png"; //$NON-NLS-1$
     

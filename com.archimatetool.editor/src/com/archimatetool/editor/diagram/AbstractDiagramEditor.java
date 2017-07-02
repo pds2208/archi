@@ -552,7 +552,9 @@ implements IDiagramModelEditor, IContextProvider, ITabbedPropertySheetPageContri
         IAction action;
         
         // Zoom Manager tweaking
+       
         ZoomManager zoomManager = (ZoomManager)getAdapter(ZoomManager.class);
+  
         double[] zoomLevels = { .25, .5, .75, 1, 1.5, 2, 3, 4, 6, 8 };
         zoomManager.setZoomLevels(zoomLevels);
         List<String> zoomContributionLevels = new ArrayList<String>();
@@ -560,7 +562,7 @@ implements IDiagramModelEditor, IContextProvider, ITabbedPropertySheetPageContri
         zoomContributionLevels.add(ZoomManager.FIT_WIDTH);
         zoomContributionLevels.add(ZoomManager.FIT_HEIGHT);
         zoomManager.setZoomLevelContributions(zoomContributionLevels);
-        
+      
         // Zoom Actions
         IAction zoomIn = new ZoomInAction(zoomManager);
         IAction zoomOut = new ZoomOutAction(zoomManager);

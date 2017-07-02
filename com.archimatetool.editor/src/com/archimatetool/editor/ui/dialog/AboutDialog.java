@@ -125,7 +125,7 @@ public class AboutDialog extends TrayDialog {
         
         final Image image = IArchiImages.ImageFactory.getImage("splash.bmp"); //$NON-NLS-1$
         if(image != null) {
-            ImageData id = image.getImageDataAtCurrentZoom();
+            ImageData id = image.getImageData();
             gd.widthHint = id.width;
             gd.heightHint = id.height;
             imageHeight = id.height;
