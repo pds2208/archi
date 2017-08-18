@@ -136,7 +136,12 @@ extends RoundedPolylineConnection implements IDiagramConnectionFigure {
         if(fConnectionLabel == null) {
             fConnectionLabel = new Label(""); //$NON-NLS-1$
             add(fConnectionLabel);
+        } else if (!fConnectionLabel.getText().equals("")) {
+        	// make the label opaque and surround with an extra space
+            fConnectionLabel.setOpaque(true);
+            fConnectionLabel.setText(" " + fConnectionLabel.getText() + " ");
         }
+
         return fConnectionLabel;
     }
 
