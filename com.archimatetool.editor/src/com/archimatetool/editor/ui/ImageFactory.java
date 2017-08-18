@@ -40,6 +40,13 @@ public class ImageFactory {
     }
     
     /**
+     * @return The plugin that owns this ImageFactory
+     */
+    public AbstractUIPlugin getPlugin() {
+        return fPlugin;
+    }
+    
+    /**
      * Returns the shared image represented by the given key.
      * 
      * @param imageName
@@ -64,36 +71,32 @@ public class ImageFactory {
     }
     
     /**
-     * Return a composite overlay image
+     * Return a composite image with overlay image
      * 
-     * @param imageName
-     * @param overlayName
+     * @param underlay The underlay image
+     * @param overlayName Name of the overlay image
      * @param quadrant the quadrant (one of {@link IDecoration} 
      * ({@link IDecoration#TOP_LEFT}, {@link IDecoration#TOP_RIGHT},
      * {@link IDecoration#BOTTOM_LEFT}, {@link IDecoration#BOTTOM_RIGHT} 
      * or {@link IDecoration#UNDERLAY})
-     * @return
+     * @return The image
      */
-    public Image getOverlayImage(String imageName, String overlayName, int quadrant) {
-        // Make a registry name, cached
-        String key_name = imageName + overlayName + quadrant;
+    public Image getOverlayImage(Image underlay, String overlayName, int quadrant) {
+        String key = underlay.hashCode() + overlayName + quadrant;
         
-        Image image = getImage(key_name);
-        
-        // Make it and cache it
-        if(image == null) {
-            Image underlay = getImage(imageName);
-            ImageDescriptor overlay = getImageDescriptor(overlayName);
-            if(underlay != null && overlay != null) {
-                image = new DecorationOverlayIcon(underlay, overlay, quadrant).createImage();
-                if(image != null) {
+        Image newImage = getImage(key);
+        if(newImage == null) {
+            ImageDescriptor overlayDescripter = getImageDescriptor(overlayName);
+            if(overlayDescripter != null) {
+                newImage = new DecorationOverlayIcon(underlay, overlayDescripter, quadrant).createImage();
+                if(newImage != null) {
                     ImageRegistry registry = fPlugin.getImageRegistry();
-                    registry.put(key_name, image);
+                    registry.put(key, newImage);
                 }
             }
         }
         
-        return image;
+        return newImage != null ? newImage : underlay;
     }
     
     /**
@@ -171,7 +174,8 @@ public class ImageFactory {
                 registry.put(imageName, id); // The image will be created next when registry.get(imageName) is called
             }
             else {
-                System.err.println("Could not get Image Descriptor for: " + imageName); //$NON-NLS-1$
+                // Can be null in the case of overlay images where the image name is a composite name
+                //System.err.println("Could not get Image Descriptor for: " + imageName); //$NON-NLS-1$
             }
         }
         
