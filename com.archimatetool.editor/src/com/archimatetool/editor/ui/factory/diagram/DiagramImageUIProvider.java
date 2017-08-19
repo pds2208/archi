@@ -67,9 +67,4 @@ public class DiagramImageUIProvider extends AbstractGraphicalObjectUIProvider {
         return feature == IArchimatePackage.Literals.BORDER_OBJECT__BORDER_COLOR;
     }
 
-	@Override
-	public ImageDescriptor getImageDescriptor2x() {
-		return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_LANDSCAPE);
-	}
-
 }

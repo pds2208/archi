@@ -66,8 +66,4 @@ public class CanvasBlockUIProvider extends AbstractGraphicalObjectUIProvider {
         return true;
     }
 
-	@Override
-	public ImageDescriptor getImageDescriptor2x() {
-		return ICanvasImages.ImageFactory.getImageDescriptor(ICanvasImages.ICON_CANVAS_BLOCK2x);
-	}
 }

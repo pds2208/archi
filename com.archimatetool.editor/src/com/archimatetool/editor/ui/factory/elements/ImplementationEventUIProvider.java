@@ -50,12 +50,6 @@ public class ImplementationEventUIProvider extends AbstractArchimateElementUIPro
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_IMPLEMENTATION_EVENT);
     }
     
-
-    @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_IMPLEMENTATION_EVENT2);
-    }
-    
     @Override
     public Color getDefaultColor() {
         return ColorFactory.get(255, 224, 224);

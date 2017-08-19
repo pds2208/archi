@@ -51,11 +51,6 @@ public class GoalUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_GOAL2);
-    }
-
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(204, 204, 255);
     }

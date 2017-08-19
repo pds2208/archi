@@ -51,11 +51,6 @@ public class ValueUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_VALUE2);
-    }
-    
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(204, 204, 255);
     }

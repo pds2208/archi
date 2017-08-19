@@ -51,11 +51,6 @@ public class DistributionNetworkUIProvider extends AbstractArchimateElementUIPro
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DISTRIBUTION_NETWORK2);
-    }
-    
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }

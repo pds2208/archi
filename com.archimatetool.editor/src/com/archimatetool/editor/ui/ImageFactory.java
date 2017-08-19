@@ -5,6 +5,10 @@
  */
 package com.archimatetool.editor.ui;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.resource.CompositeImageDescriptor;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.resource.ImageRegistry;
@@ -17,7 +21,9 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.ImageData;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.internal.util.BundleUtility;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.osgi.framework.Bundle;
 
 import com.archimatetool.editor.ui.components.CompositeMultiImageDescriptor;
 
@@ -168,6 +174,7 @@ public class ImageFactory {
         
         ImageRegistry registry = fPlugin.getImageRegistry();
         ImageDescriptor id = registry.getDescriptor(imageName);
+       
         if(id == null) {
             id = AbstractUIPlugin.imageDescriptorFromPlugin(fPlugin.getBundle().getSymbolicName(), imageName);
             if(id != null) {

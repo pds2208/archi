@@ -48,8 +48,4 @@ public class AccessRelationshipUIProvider extends AbstractArchimateRelationshipU
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ACESS_RELATION);
     }
         
-        @Override
-        public ImageDescriptor getImageDescriptor2x() {
-            return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ACESS_RELATION);
-    }
 }

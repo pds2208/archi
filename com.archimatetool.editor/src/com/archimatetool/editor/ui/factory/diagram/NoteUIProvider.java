@@ -54,8 +54,4 @@ public class NoteUIProvider extends AbstractGraphicalObjectUIProvider {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_NOTE);
     }
 
-	@Override
-	public ImageDescriptor getImageDescriptor2x() {
-		return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_NOTE2);
-	}
 }

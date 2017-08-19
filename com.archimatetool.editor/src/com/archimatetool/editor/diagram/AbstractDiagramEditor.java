@@ -48,6 +48,7 @@ import org.eclipse.gef.ui.parts.GraphicalEditorWithFlyoutPalette;
 import org.eclipse.gef.ui.parts.GraphicalViewerKeyHandler;
 import org.eclipse.help.IContextProvider;
 import org.eclipse.jface.action.IAction;
+import org.eclipse.jface.action.MenuManager;
 import org.eclipse.jface.commands.ActionHandler;
 import org.eclipse.jface.util.IPropertyChangeListener;
 import org.eclipse.jface.util.PropertyChangeEvent;
@@ -419,12 +420,12 @@ implements IDiagramModelEditor, IContextProvider, ITabbedPropertySheetPageContri
      * Configure the Palette Viewer
      */
     protected void configurePaletteViewer(final PaletteViewer viewer) {
-        PaletteViewerPreferences prefs = viewer.getPaletteViewerPreferences();
+        PaletteViewerPreferences prefs = viewer.getPaletteViewerPreferences(); 
         
         // First time use so set to icons layout
         if(!InternalGEFPlugin.getDefault().getPreferenceStore().getBoolean("com.archimatetool.paletteSet")) { //$NON-NLS-1$
             InternalGEFPlugin.getDefault().getPreferenceStore().setValue("com.archimatetool.paletteSet", true); //$NON-NLS-1$
-            prefs.setLayoutSetting(PaletteViewerPreferences.LAYOUT_ICONS);
+            prefs.setLayoutSetting(PaletteViewerPreferences.LAYOUT_LIST);
             prefs.setCurrentUseLargeIcons(false);
         }
         

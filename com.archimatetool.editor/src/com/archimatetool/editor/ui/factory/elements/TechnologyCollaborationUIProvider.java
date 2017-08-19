@@ -51,11 +51,6 @@ public class TechnologyCollaborationUIProvider extends AbstractArchimateElementU
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_TECHNOLOGY_COLLABORATION2);
-    }
-    
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }

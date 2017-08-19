@@ -60,8 +60,4 @@ public class ApplicationProcessUIProvider extends AbstractArchimateElementUIProv
         return true;
     }
 
-	@Override
-	public ImageDescriptor getImageDescriptor2x() {
-		return getImageDescriptorWithUserFillColor(IArchiImages.ICON_APPLICATION_PROCESS2);
-	}
 }

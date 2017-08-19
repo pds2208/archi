@@ -51,11 +51,6 @@ public class ResourceUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_RESOURCE2);
-    }
-    
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(245, 222, 170);
     }

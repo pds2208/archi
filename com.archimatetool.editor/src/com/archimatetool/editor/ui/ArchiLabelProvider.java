@@ -124,23 +124,6 @@ public class ArchiLabelProvider {
     }
     
     /**
-     * @param eClass
-     * @return An ImageDescriptor for an EClass
-     */
-    public ImageDescriptor getImageDescriptor2x(EClass eClass) {
-        if(eClass == null) {
-            return null;
-        }
-        
-        IObjectUIProvider provider = ObjectUIFactory.INSTANCE.getProviderForClass(eClass);
-        if(provider != null) {
-            return provider.getImageDescriptor2x();
-        }
-        
-        return null;
-    }
-    
-    /**
      * @param element
      * @return A IGraphicsIcon for a Diagram Model
      */

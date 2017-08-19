@@ -41,8 +41,4 @@ public class ArchimateModelUIProvider extends AbstractObjectUIProvider {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_MODELS);
     }
     
-        @Override
-        public ImageDescriptor getImageDescriptor2x() {
-            return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_MODELS);
-    }
 }

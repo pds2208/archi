@@ -51,11 +51,6 @@ public class PlateauUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_PLATEAU2);
-    }
-
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(224, 255, 224);
     }

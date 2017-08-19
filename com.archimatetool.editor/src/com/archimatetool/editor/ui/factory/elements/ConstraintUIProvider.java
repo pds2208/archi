@@ -51,11 +51,6 @@ public class ConstraintUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_CONSTRAINT2);
-    }
-
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(204, 204, 255);
     }

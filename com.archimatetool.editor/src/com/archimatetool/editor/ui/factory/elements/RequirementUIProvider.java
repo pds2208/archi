@@ -51,12 +51,6 @@ public class RequirementUIProvider extends AbstractArchimateElementUIProvider {
     }
 
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_REQUIREMENT2);
-    }
-
-    
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(204, 204, 255);
     }

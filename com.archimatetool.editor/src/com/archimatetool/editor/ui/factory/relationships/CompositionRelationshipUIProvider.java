@@ -48,8 +48,4 @@ public class CompositionRelationshipUIProvider extends AbstractArchimateRelation
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_COMPOSITION_RELATION);
     }
     
-    @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_COMPOSITION_RELATION);
-    }
 }

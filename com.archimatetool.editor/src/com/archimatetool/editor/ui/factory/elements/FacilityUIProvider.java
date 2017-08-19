@@ -51,11 +51,6 @@ public class FacilityUIProvider extends AbstractArchimateElementUIProvider {
     }
     
     @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return getImageDescriptorWithUserFillColor(IArchiImages.ICON_FACILITY2);
-    }
-    
-    @Override
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }

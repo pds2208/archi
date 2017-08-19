@@ -48,8 +48,4 @@ public class AssignmentRelationshipUIProvider extends AbstractArchimateRelations
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ASSIGNMENT_RELATION);
     }
     
-    @Override
-    public ImageDescriptor getImageDescriptor2x() {
-        return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ASSIGNMENT_RELATION);
-    }
 }
