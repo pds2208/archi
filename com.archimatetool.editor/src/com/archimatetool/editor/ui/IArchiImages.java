@@ -109,7 +109,6 @@ public interface IArchiImages {
     String ICON_VALUE = ARCHIMATE_IMGPATH + "value.png"; //$NON-NLS-1$
     String ICON_WORKPACKAGE = ARCHIMATE_IMGPATH + "workpackage.png"; //$NON-NLS-1$
     
-  
     // Relations
     String ICON_ACESS_RELATION = ARCHIMATE_IMGPATH + "access.png"; //$NON-NLS-1$
     String ICON_AGGREGATION_RELATION = ARCHIMATE_IMGPATH + "aggregation.png"; //$NON-NLS-1$
@@ -127,12 +126,10 @@ public interface IArchiImages {
     String ICON_AND_JUNCTION = ARCHIMATE_IMGPATH + "and-junction.png"; //$NON-NLS-1$
     String ICON_OR_JUNCTION = ARCHIMATE_IMGPATH + "or-junction.png"; //$NON-NLS-1$
     
-
-    
     // Other
-    String ICON_ALIGN_TEXT_LEFT = IMGPATH + "alignleft.gif"; //$NON-NLS-1$
-    String ICON_ALIGN_TEXT_CENTER = IMGPATH + "aligncenter.gif"; //$NON-NLS-1$
-    String ICON_ALIGN_TEXT_RIGHT = IMGPATH + "alignright.gif"; //$NON-NLS-1$
+    String ICON_ALIGN_TEXT_LEFT = IMGPATH + "alignleft.png"; //$NON-NLS-1$
+    String ICON_ALIGN_TEXT_CENTER = IMGPATH + "aligncenter.png"; //$NON-NLS-1$
+    String ICON_ALIGN_TEXT_RIGHT = IMGPATH + "alignright.png"; //$NON-NLS-1$
 
     String ICON_ALIGN_TEXT_TOP = IMGPATH + "aligntop.png"; //$NON-NLS-1$
     String ICON_ALIGN_TEXT_MIDDLE = IMGPATH + "alignmiddle.png"; //$NON-NLS-1$
@@ -159,7 +156,7 @@ public interface IArchiImages {
     String ICON_LINKED = IMGPATH + "linked.png"; //$NON-NLS-1$
     String ICON_LANDSCAPE = IMGPATH + "landscape.png"; //$NON-NLS-1$
     String ICON_LOCK = IMGPATH + "lock.png"; //$NON-NLS-1$
-    String ICON_MAGIC_CONNECTION = IMGPATH + "magic_connection.gif"; //$NON-NLS-1$
+    String ICON_MAGIC_CONNECTION = IMGPATH + "magic_connection.png"; //$NON-NLS-1$
     String ICON_MINUS = IMGPATH + "minus.png"; //$NON-NLS-1$
     String ICON_MODELS = IMGPATH + "models.png"; //$NON-NLS-1$
     String ICON_MUTIPLE = IMGPATH + "mutiple.png"; //$NON-NLS-1$
@@ -202,5 +199,8 @@ public interface IArchiImages {
     String CURSOR_IMG_FORMAT_PAINTER = IMGPATH + "formatpainter-cursor.gif"; //$NON-NLS-1$
     String CURSOR_IMG_FORMAT_PAINTER_GREY = IMGPATH + "formatpainter-grey-cursor.gif"; //$NON-NLS-1$
     
-    String CURSOR_IMG_MAGIC_CONNECTOR = IMGPATH + "magic-connector-cursor.gif"; //$NON-NLS-1$
+    String CURSOR_IMG_MAGIC_CONNECTOR = IMGPATH + "magic-connector-cursor.png"; //$NON-NLS-1$
+    
+    String DETACH_PALETTE = IMGPATH + "detach_palette.png"; //$NON-NLS-1$
+    
 }
