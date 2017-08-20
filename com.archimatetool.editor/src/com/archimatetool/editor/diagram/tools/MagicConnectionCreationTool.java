@@ -64,7 +64,8 @@ public class MagicConnectionCreationTool extends ConnectionCreationTool {
     
     private static Cursor cursor = new Cursor(
     		null,
-            IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.CURSOR_IMG_MAGIC_CONNECTOR).getImageData(),
+    		IArchiImages.ImageFactory.getImage(IArchiImages.CURSOR_IMG_MAGIC_CONNECTOR).getImageDataAtCurrentZoom(),
+            //IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.CURSOR_IMG_MAGIC_CONNECTOR).getImageData(),
             0,
             0);
 
