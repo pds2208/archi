@@ -59,4 +59,5 @@ public class ApplicationProcessUIProvider extends AbstractArchimateElementUIProv
     public boolean hasAlternateFigure() {
         return true;
     }
+
 }

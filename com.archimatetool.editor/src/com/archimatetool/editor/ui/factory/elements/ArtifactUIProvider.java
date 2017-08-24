@@ -54,4 +54,8 @@ public class ArtifactUIProvider extends AbstractArchimateElementUIProvider {
     public Color getDefaultColor() {
         return ColorFactory.get(201, 231, 183);
     }
+
+
+    
+    
 }

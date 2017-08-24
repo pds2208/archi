@@ -460,7 +460,7 @@ implements IZestView, ISelectionListener {
             @Override
             public ImageDescriptor getImageDescriptor() {
                 return AbstractUIPlugin.imageDescriptorFromPlugin(ArchiZestPlugin.PLUGIN_ID,
-                        "img/layout.gif"); //$NON-NLS-1$
+                        "img/layout.png"); //$NON-NLS-1$
             }
         };
         

@@ -33,12 +33,13 @@ public interface IArchiImages {
     
     // ECLIPSE IMAGES
     String ECLIPSE_IMAGE_PROPERTIES_VIEW_ICON = IMGPATH + "prop_ps.gif"; //$NON-NLS-1$
-    String ECLIPSE_IMAGE_OUTLINE_VIEW_ICON = IMGPATH + "outline_co.gif"; //$NON-NLS-1$
+    String ECLIPSE_IMAGE_OUTLINE_VIEW_ICON = IMGPATH + "outline_co.png"
+    		+ ""; //$NON-NLS-1$
     String ECLIPSE_IMAGE_NEW_WIZARD = IMGPATH + "new_wiz.png"; //$NON-NLS-1$
     String ECLIPSE_IMAGE_IMPORT_PREF_WIZARD = IMGPATH + "importpref_wiz.png";  //$NON-NLS-1$
     String ECLIPSE_IMAGE_EXPORT_DIR_WIZARD = IMGPATH + "exportdir_wiz.png"; //$NON-NLS-1$
     String ECLIPSE_IMAGE_FILE = IMGPATH + "file_obj.gif"; //$NON-NLS-1$
-    String ECLIPSE_IMAGE_FOLDER = IMGPATH + "fldr_obj.gif"; //$NON-NLS-1$
+    String ECLIPSE_IMAGE_FOLDER = IMGPATH + "fldr_obj.png"; //$NON-NLS-1$
     
     String MENU_ARROW = IMGPATH + "menu-arrow.png"; //$NON-NLS-1$
     
@@ -125,12 +126,10 @@ public interface IArchiImages {
     String ICON_AND_JUNCTION = ARCHIMATE_IMGPATH + "and-junction.png"; //$NON-NLS-1$
     String ICON_OR_JUNCTION = ARCHIMATE_IMGPATH + "or-junction.png"; //$NON-NLS-1$
     
-
-    
     // Other
-    String ICON_ALIGN_TEXT_LEFT = IMGPATH + "alignleft.gif"; //$NON-NLS-1$
-    String ICON_ALIGN_TEXT_CENTER = IMGPATH + "aligncenter.gif"; //$NON-NLS-1$
-    String ICON_ALIGN_TEXT_RIGHT = IMGPATH + "alignright.gif"; //$NON-NLS-1$
+    String ICON_ALIGN_TEXT_LEFT = IMGPATH + "alignleft.png"; //$NON-NLS-1$
+    String ICON_ALIGN_TEXT_CENTER = IMGPATH + "aligncenter.png"; //$NON-NLS-1$
+    String ICON_ALIGN_TEXT_RIGHT = IMGPATH + "alignright.png"; //$NON-NLS-1$
 
     String ICON_ALIGN_TEXT_TOP = IMGPATH + "aligntop.png"; //$NON-NLS-1$
     String ICON_ALIGN_TEXT_MIDDLE = IMGPATH + "alignmiddle.png"; //$NON-NLS-1$
@@ -141,7 +140,9 @@ public interface IArchiImages {
     String ICON_CANCEL_SEARCH = IMGPATH + "cancelsearch.png"; //$NON-NLS-1$
     String ICON_COG = IMGPATH + "cog.png"; //$NON-NLS-1$
     String ICON_COLLAPSEALL = IMGPATH + "collapseall.png"; //$NON-NLS-1$
+    
     String ICON_DIAGRAM = IMGPATH + "diagram.png"; //$NON-NLS-1$
+    
     String ICON_DEFAULT_SIZE = IMGPATH + "default-size.png"; //$NON-NLS-1$
     String ICON_DERIVED = IMGPATH + "derived.png"; //$NON-NLS-1$
     String ICON_DERIVED_SM = IMGPATH + "derived-sm.png"; //$NON-NLS-1$
@@ -149,24 +150,28 @@ public interface IArchiImages {
     String ICON_FILTER = IMGPATH + "filter.gif"; //$NON-NLS-1$
     String ICON_FORMAT_PAINTER = IMGPATH + "formatpainter.png"; //$NON-NLS-1$
     String ICON_FORMAT_PAINTER_GREY = IMGPATH + "formatpainter-grey.png"; //$NON-NLS-1$
+    
     String ICON_GROUP = IMGPATH + "group.png"; //$NON-NLS-1$
-    String ICON_LINKED = IMGPATH + "linked.gif"; //$NON-NLS-1$
+    
+    String ICON_LINKED = IMGPATH + "linked.png"; //$NON-NLS-1$
     String ICON_LANDSCAPE = IMGPATH + "landscape.png"; //$NON-NLS-1$
     String ICON_LOCK = IMGPATH + "lock.png"; //$NON-NLS-1$
-    String ICON_MAGIC_CONNECTION = IMGPATH + "magic_connection.gif"; //$NON-NLS-1$
+    String ICON_MAGIC_CONNECTION = IMGPATH + "magic_connection.png"; //$NON-NLS-1$
     String ICON_MINUS = IMGPATH + "minus.png"; //$NON-NLS-1$
-    String ICON_MODELS = IMGPATH + "models.gif"; //$NON-NLS-1$
+    String ICON_MODELS = IMGPATH + "models.png"; //$NON-NLS-1$
     String ICON_MUTIPLE = IMGPATH + "mutiple.png"; //$NON-NLS-1$
     String ICON_NAVIGATOR = IMGPATH + "navigator.png"; //$NON-NLS-1$
-    String ICON_NAVIGATOR_DOWNWARD = IMGPATH + "nav-downward.gif"; //$NON-NLS-1$
-    String ICON_NAVIGATOR_UPWARD = IMGPATH + "nav-upward.gif"; //$NON-NLS-1$
-    String ICON_NEW_FILE = IMGPATH + "newfile.gif"; //$NON-NLS-1$
+    String ICON_NAVIGATOR_DOWNWARD = IMGPATH + "nav-downward.png"; //$NON-NLS-1$
+    String ICON_NAVIGATOR_UPWARD = IMGPATH + "nav-upward.png"; //$NON-NLS-1$
+    String ICON_NEW_FILE = IMGPATH + "newfile.png"; //$NON-NLS-1$
     String ICON_NEW_OVERLAY = IMGPATH + "new_overlay.gif"; //$NON-NLS-1$
-    String ICON_NOTE = IMGPATH + "note.gif"; //$NON-NLS-1$
-    String ICON_OPEN = IMGPATH + "open.gif"; //$NON-NLS-1$
-    String ICON_PIN = IMGPATH + "pin.gif"; //$NON-NLS-1$
+    
+    String ICON_NOTE = IMGPATH + "note.png"; //$NON-NLS-1$
+    
+    String ICON_OPEN = IMGPATH + "open.png"; //$NON-NLS-1$
+    String ICON_PIN = IMGPATH + "pin.png"; //$NON-NLS-1$
     String ICON_PLUS = IMGPATH + "plus.png"; //$NON-NLS-1$
-    String ICON_PROPERTIES = IMGPATH + "properties.gif"; //$NON-NLS-1$
+    String ICON_PROPERTIES = IMGPATH + "properties.png"; //$NON-NLS-1$
     String ICON_SEARCH = IMGPATH + "search.png"; //$NON-NLS-1$
     String ICON_SKETCH = IMGPATH + "sketch.png"; //$NON-NLS-1$
     String ICON_SMALL_X = IMGPATH + "smallx.png"; //$NON-NLS-1$
@@ -195,4 +200,7 @@ public interface IArchiImages {
     String CURSOR_IMG_FORMAT_PAINTER_GREY = IMGPATH + "formatpainter-grey-cursor.gif"; //$NON-NLS-1$
     
     String CURSOR_IMG_MAGIC_CONNECTOR = IMGPATH + "magic-connector-cursor.gif"; //$NON-NLS-1$
+    
+    String DETACH_PALETTE = IMGPATH + "detach_palette.png"; //$NON-NLS-1$
+    
 }

@@ -47,4 +47,5 @@ public class TriggeringRelationshipUIProvider extends AbstractArchimateRelations
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_TRIGGERING_RELATION);
     }
+    
 }

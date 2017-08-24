@@ -59,4 +59,5 @@ public class ApplicationEventUIProvider extends AbstractArchimateElementUIProvid
     public boolean hasAlternateFigure() {
         return true;
     }
+
 }

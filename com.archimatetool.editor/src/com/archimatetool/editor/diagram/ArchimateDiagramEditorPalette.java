@@ -228,7 +228,6 @@ public class ArchimateDiagramEditorPalette extends AbstractPaletteRoot {
                 new ArchimateDiagramModelFactory(eClass),
                 ArchiLabelProvider.INSTANCE.getImageDescriptor(eClass),
                 ArchiLabelProvider.INSTANCE.getImageDescriptor(eClass));
-        
         return entry;
     }
     

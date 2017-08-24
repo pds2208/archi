@@ -54,4 +54,5 @@ public class ApplicationFunctionUIProvider extends AbstractArchimateElementUIPro
     public Color getDefaultColor() {
         return ColorFactory.get(181, 255, 255);
     }
+
 }

@@ -57,4 +57,5 @@ public class ArchimateDiagramModelUIProvider extends AbstractObjectUIProvider im
     public IGraphicsIcon getGraphicsIcon() {
         return graphicsIcon;
     }
+
 }

@@ -49,7 +49,7 @@ public class StakeholderUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_STAKEHOLDER);
     }
-
+    
     @Override
     public Color getDefaultColor() {
         return ColorFactory.get(204, 204, 255);

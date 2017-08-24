@@ -238,10 +238,12 @@ extends ActionBarAdvisor {
                 "com.archimatetool.editor.action.showNavigatorView", INavigatorView.IMAGE_DESCRIPTOR); //$NON-NLS-1$
         register(fShowNavigatorView);
 
+        
         fShowPaletteView = new ToggleViewAction(Messages.ArchimateEditorActionBarAdvisor_6, PaletteView.ID,
                                     "com.archimatetool.editor.action.showPaletteView", //$NON-NLS-1$
-                                    AbstractUIPlugin.imageDescriptorFromPlugin("org.eclipse.gef", //$NON-NLS-1$
-                                    "$nl$/icons/palette_view.gif")) { //$NON-NLS-1$
+                                    IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.DETACH_PALETTE)) {
+                                    //AbstractUIPlugin.imageDescriptorFromPlugin("org.eclipse.gef", //$NON-NLS-1$
+                                    //"$nl$/icons/palette_view.gif")) { //$NON-NLS-1$
             @Override
             public String getToolTipText() {
                 return Messages.ArchimateEditorActionBarAdvisor_7;

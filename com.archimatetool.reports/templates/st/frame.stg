@@ -26,7 +26,7 @@ expandAreasForChildren(children) ::= <<
 }^
 >>
 
-frame(element) ::= <<
+frame(element, height, width) ::= <<
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html class="frame" lang="en">
 <head>
@@ -60,7 +60,7 @@ frame(element) ::= <<
 		</div>
 		<div class="panel-body root-panel-body">
 			^if(element.Children)^
-			<img class="diagram" src="../images/^element.Id^.png" alt="^element.Name^" usemap="#^element.Id^map">
+			<img class="ui-layout-content" src="../images/^element.Id^.png" alt="^element.Name^" usemap="#^element.Id^map" height="^height^" width="^width^">
 			<map name="^element.Id^map">
 				^expandAreasForChildren(element.Children)^
 			</map>
@@ -125,7 +125,7 @@ frame(element) ::= <<
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">imageMapResize();</script>
+	
 </body>
 </html>
 >>

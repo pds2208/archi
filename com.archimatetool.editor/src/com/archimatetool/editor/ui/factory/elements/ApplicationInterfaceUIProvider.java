@@ -54,4 +54,5 @@ public class ApplicationInterfaceUIProvider extends AbstractInterfaceUIProvider 
     public Color getDefaultColor() {
         return ColorFactory.get(181, 255, 255);
     }
+
 }

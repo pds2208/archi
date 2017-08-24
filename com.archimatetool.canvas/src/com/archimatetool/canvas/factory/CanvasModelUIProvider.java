@@ -58,4 +58,5 @@ public class CanvasModelUIProvider extends AbstractObjectUIProvider implements I
     public IGraphicsIcon getGraphicsIcon() {
         return graphicsIcon;
     }
+
 }

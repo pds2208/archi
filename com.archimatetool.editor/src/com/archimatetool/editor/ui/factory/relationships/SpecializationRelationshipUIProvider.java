@@ -47,4 +47,5 @@ public class SpecializationRelationshipUIProvider extends AbstractArchimateRelat
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_SPECIALIZATION_RELATION);
     }
+    
 }

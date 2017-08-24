@@ -59,4 +59,5 @@ public class ApplicationComponentUIProvider extends AbstractArchimateElementUIPr
     public boolean hasAlternateFigure() {
         return true;
     }
+
 }

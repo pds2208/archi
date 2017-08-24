@@ -60,4 +60,5 @@ public class DiagramConnectionUIProvider extends AbstractGraphicalObjectUIProvid
     public Color getDefaultLineColor() {
         return ColorConstants.black;
     }
+
 }

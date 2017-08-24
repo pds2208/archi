@@ -99,7 +99,7 @@ public class DiagramImageFigure extends AbstractDiagramModelObjectFigure {
             }
             // This is way too slow
             else {
-                graphics.drawImage(fImage, 0, 0, fImage.getBounds().width, fImage.getBounds().height,
+                graphics.drawImage(fImage, 0, 0, fImage.getBoundsInPixels().width, fImage.getBoundsInPixels().height,
                         bounds.x, bounds.y, bounds.width, bounds.height);
             }
         }
@@ -169,7 +169,7 @@ public class DiagramImageFigure extends AbstractDiagramModelObjectFigure {
             Image originalImage = getOriginalImage();
             
             // Use original image
-            if(width == originalImage.getBounds().width && height == originalImage.getBounds().height) {
+            if(width == originalImage.getBoundsInPixels().width && height == originalImage.getBoundsInPixels().height) {
                 fImage = originalImage;
             }
             // Scaled image

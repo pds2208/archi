@@ -65,4 +65,5 @@ public class CanvasBlockUIProvider extends AbstractGraphicalObjectUIProvider {
         
         return true;
     }
+
 }

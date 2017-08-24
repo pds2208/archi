@@ -49,7 +49,7 @@ public class DeliverableUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_DELIVERABLE);
     }
-
+    
     @Override
     public Color getDefaultColor() {
         return ColorFactory.get(255, 224, 224);

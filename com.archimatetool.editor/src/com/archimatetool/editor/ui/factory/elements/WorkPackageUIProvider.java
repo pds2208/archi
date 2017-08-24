@@ -49,7 +49,7 @@ public class WorkPackageUIProvider extends AbstractArchimateElementUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return getImageDescriptorWithUserFillColor(IArchiImages.ICON_WORKPACKAGE);
     }
-
+    
     @Override
     public Color getDefaultColor() {
         return ColorFactory.get(255, 224, 224);

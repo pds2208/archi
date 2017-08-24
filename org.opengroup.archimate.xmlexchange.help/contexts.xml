@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<?NLS TYPE="org.eclipse.help.contexts"?> 
+<contexts>
+    
+    <context id="ExportToXMLPage">
+        <description>Export a model to The Open Group Exchange format</description>
+        <topic label="Exporting and Settings" href="help/Text/export.html"/>
+    </context>
+    <context id="ExportToXMLPageMetadata">
+       <description>Adding Metadata to The Open Group XML format</description>
+       <topic href="help/Text/export_metadata.html" label="Adding Metadata"/>
+    </context>
+    
+</contexts>

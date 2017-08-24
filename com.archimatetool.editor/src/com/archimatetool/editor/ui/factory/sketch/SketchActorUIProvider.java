@@ -56,7 +56,7 @@ public class SketchActorUIProvider extends AbstractGraphicalObjectUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_ACTOR);
     }
-
+    
     @Override
     public Color getDefaultColor() {
         return ColorConstants.black;

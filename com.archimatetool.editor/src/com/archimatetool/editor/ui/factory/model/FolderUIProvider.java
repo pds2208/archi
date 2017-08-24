@@ -40,4 +40,5 @@ public class FolderUIProvider extends AbstractObjectUIProvider {
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ECLIPSE_IMAGE_FOLDER);
     }
+    
 }

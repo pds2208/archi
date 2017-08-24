@@ -47,4 +47,5 @@ public class AggregationRelationshipUIProvider extends AbstractArchimateRelation
     public ImageDescriptor getImageDescriptor() {
         return IArchiImages.ImageFactory.getImageDescriptor(IArchiImages.ICON_AGGREGATION_RELATION);
     }
+    
 }

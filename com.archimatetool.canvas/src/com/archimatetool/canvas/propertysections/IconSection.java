@@ -143,7 +143,7 @@ public class IconSection extends DiagramModelImageSection {
             @Override
             public void paintControl(PaintEvent e) {
                 if(fImage != null) {
-                    Rectangle bounds = fImage.getBounds();
+                    Rectangle bounds = fImage.getBoundsInPixels();
                     int x = (canvasSize - bounds.width) / 2;
                     int y = (canvasSize - bounds.height) / 2;
                     e.gc.drawImage(fImage, x, y);
@@ -230,7 +230,7 @@ public class IconSection extends DiagramModelImageSection {
             
             if(image != null) {
                 // If the image is bigger than the maximum allowed image then create a scaled image
-                if(image.getBounds().width > IIconic.MAX_IMAGE_SIZE || image.getBounds().height > IIconic.MAX_IMAGE_SIZE) {
+                if(image.getBoundsInPixels().width > IIconic.MAX_IMAGE_SIZE || image.getBoundsInPixels().height > IIconic.MAX_IMAGE_SIZE) {
                     fImage = ImageFactory.getScaledImage(image, IIconic.MAX_IMAGE_SIZE);
                     image.dispose();
                 }

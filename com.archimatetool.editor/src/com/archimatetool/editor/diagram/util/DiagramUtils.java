@@ -18,6 +18,7 @@ import org.eclipse.gef.RootEditPart;
 import org.eclipse.gef.editparts.FreeformGraphicalRootEditPart;
 import org.eclipse.gef.editparts.LayerManager;
 import org.eclipse.gef.ui.parts.GraphicalViewerImpl;
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.FillLayout;
@@ -159,7 +160,7 @@ public final class DiagramUtils {
         else {
             rectangle.expand(margin / scale, margin / scale);
         }
-        
+
         Image image = new Image(Display.getDefault(), (int)(rectangle.width * scale), (int)(rectangle.height * scale) );
         GC gc = new GC(image);
         SWTGraphics swtGraphics = new SWTGraphics(gc);
