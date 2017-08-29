@@ -16,6 +16,7 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.ui.PlatformUI;
 
 import com.archimatetool.editor.PluginInstaller;
+import com.archimatetool.editor.utils.PlatformUtils;
 
 
 /**
@@ -31,21 +32,38 @@ public class InstallPluginAction extends Action {
 
     @Override
     public void run() {
+        // Check that we can write to plugins folder
+        if(!PluginInstaller.canWrite()) {
+            String message = Messages.InstallPluginAction_4;
+            
+            if(PlatformUtils.isWindows()) {
+                message += " " + Messages.InstallPluginAction_5; //$NON-NLS-1$
+            }
+            if(PlatformUtils.isMac()) {
+                message += " " + Messages.InstallPluginAction_6; //$NON-NLS-1$
+            }
+            
+            MessageDialog.openError(Display.getCurrent().getActiveShell(),
+                    Messages.InstallPluginAction_0,
+                    message);
+            return;
+        }
+        
         File file = askOpenFile();
         if(file == null) {
             return;
         }
         
         try {
-            // Not an Archi plug-in zip file
+            // Not an Archi plugin
             if(!PluginInstaller.isPluginZipFile(file)) {
                 MessageDialog.openError(Display.getCurrent().getActiveShell(),
                         Messages.InstallPluginAction_0, Messages.InstallPluginAction_1);
                 return;
             }
 
-            // Unpack zip to install folder
-            PluginInstaller.unpackZipPackageToInstallFolder(file);
+            // Unpack zip to plugins folder
+            PluginInstaller.unpackZipPackageToPluginsFolder(file);
         }
         catch(IOException ex) {
             ex.printStackTrace();
