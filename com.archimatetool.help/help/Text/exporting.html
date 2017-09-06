@@ -27,7 +27,7 @@
     <br/>
     <p>The CSV field format for elements is - "ID", "Type", "Name", "Documentation"</p>
     <p>The CSV field format for relations is - "ID","Type", "Name", "Documentation", "Source", "Target"</p>
-    <p>The CSV field format for elements is - "ID", "Key", "Value"</p>
+    <p>The CSV field format for properties is - "ID", "Key", "Value"</p>
     
     <h3>Export Options</h3>
     <p><strong>Output Folder</strong><br/>
@@ -40,7 +40,7 @@
     Provide an optional prefix to add to the file names. For example, "MyModel-" will change the file names to "MyModel-elements.csv", "MyModel-relations.csv", and "MyModel-properties.csv".</p>
 
     <p><strong>File encoding</strong><br/>
-    Select the file encoding to use - ANSI or UTF-8. Some programs prefer one or the other file encoding.</p>
+    Select the file encoding to use - ANSI, UTF-8 or UTF-8 BOM. Some programs prefer one or the other file encoding. For example, MS Excel prefers the "UTF-8 BOM" encoding if Unicode characters are present in the CSV file.</p>
 
     <p><strong>Strip newline characters</strong><br/>
     If selected will remove all newline characters from multi-line text such as documentation.</p>
