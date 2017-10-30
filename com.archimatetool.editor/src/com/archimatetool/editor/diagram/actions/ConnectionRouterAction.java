@@ -30,7 +30,7 @@ import com.archimatetool.model.IDiagramModel;
 public abstract class ConnectionRouterAction extends Action implements Disposable {
     
     public static String CONNECTION_ROUTER_BENDPONT = Messages.ConnectionRouterAction_0;
-    //public static String CONNECTION_ROUTER_SHORTEST_PATH = Messages.ConnectionRouterAction_1;
+    public static String CONNECTION_ROUTER_SHORTEST_PATH = Messages.ConnectionRouterAction_1;
     public static String CONNECTION_ROUTER_MANHATTAN = Messages.ConnectionRouterAction_2;
     
     public static List<Integer> CONNECTION_ROUTER_TYPES = Arrays.asList(new Integer[] {

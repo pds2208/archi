@@ -155,8 +155,8 @@ extends ActionBarContributor {
         addRetargetAction(new RetargetAction(ConnectionRouterAction.BendPointConnectionRouterAction.ID,
                 ConnectionRouterAction.CONNECTION_ROUTER_BENDPONT, IAction.AS_RADIO_BUTTON));
 // Doesn't work with Connection to Connection
-//      addRetargetAction(new RetargetAction(ConnectionRouterAction.ShortestPathConnectionRouterAction.ID,
-//              ConnectionRouterAction.CONNECTION_ROUTER_SHORTEST_PATH, IAction.AS_RADIO_BUTTON));
+      //addRetargetAction(new RetargetAction(ConnectionRouterAction.ShortestPathConnectionRouterAction.ID,
+      //       ConnectionRouterAction.CONNECTION_ROUTER_SHORTEST_PATH, IAction.AS_RADIO_BUTTON));
         addRetargetAction(new RetargetAction(ConnectionRouterAction.ManhattanConnectionRouterAction.ID,
                 ConnectionRouterAction.CONNECTION_ROUTER_MANHATTAN, IAction.AS_RADIO_BUTTON));
         

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: com.archimatetool.csv;singleton:=true
-Bundle-Version: 4.0.3.qualifier
+Bundle-Version: 4.1.0.qualifier
 Bundle-Vendor: %Bundle-Vendor
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
@@ -14,3 +14,6 @@ Export-Package: com.archimatetool.csv,
  com.archimatetool.csv.importer
 Bundle-Activator: com.archimatetool.csv.CSVImportExportPlugin
 Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/commons-csv-1.5.jar,
+ lib/commons-io-2.5.jar,
+ .

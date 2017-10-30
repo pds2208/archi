@@ -728,8 +728,8 @@ implements IDiagramModelEditor, IContextProvider, ITabbedPropertySheetPageContri
         action = new ConnectionRouterAction.BendPointConnectionRouterAction(this);
         registry.registerAction(action);
 // Doesn't work with Connection to Connection
-//        action = new ConnectionRouterAction.ShortestPathConnectionRouterAction(this);
-        registry.registerAction(action);
+        //action = new ConnectionRouterAction.ShortestPathConnectionRouterAction(this);
+        //registry.registerAction(action);
         action = new ConnectionRouterAction.ManhattanConnectionRouterAction(this);
         registry.registerAction(action);
         
@@ -746,7 +746,7 @@ implements IDiagramModelEditor, IContextProvider, ITabbedPropertySheetPageContri
         getUpdateCommandStackActions().add((UpdateAction)action);
         
         // Send to Back
-        action = new SendToBackAction(this);
+        action = new SendToBackAction(this); 
         registry.registerAction(action);
         getSelectionActions().add(action.getId());
         getUpdateCommandStackActions().add((UpdateAction)action);
